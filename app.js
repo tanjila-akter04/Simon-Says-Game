@@ -73,6 +73,29 @@ function checkAns(idx){
    
 }
 
+function btnPress(){
+    //console.log(this);
+    let btn = this;
+    userFlash(btn);
 
+  let userColor = btn.getAttribute("id");
+    userSeq.push(userColor);
+
+    checkAns(userSeq.length-1);
+
+    console.log(btn.outerHTML);
+}
+
+let allBtns = document.querySelectorAll(".btn");
+for(btn of allBtns){
+    btn.addEventListener("click", btnPress);
+} 
+
+function reset(){
+started = false;
+gameSeq = [];
+userSeq = [];
+level = 0;
+}
 
  
