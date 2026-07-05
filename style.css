@@ -3,8 +3,8 @@ body{
 }
 
 .btn{
-    height: 150px;
-    width: 150px;
+    height: 100px;
+    width: 100px;
     border-radius:20% ;
     border: 10px solid black;
     margin: 2.5rem;
@@ -29,4 +29,13 @@ body{
 
 .purple{
     background-color: #819ff9;
+}
+
+
+.flash{
+    background-color: white;
+}
+
+.userflash{
+    background-color: green;
 }
