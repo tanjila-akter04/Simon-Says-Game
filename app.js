@@ -53,4 +53,26 @@ console.log(gameSeq);
 }
 
 
+function checkAns(idx){
+    //console.log("current level : ", level);
+    
+
+    if(userSeq[idx] === gameSeq[idx]){
+    
+        if(userSeq.length === gameSeq.length){
+            setTimeout(levelUp, 1000);
+        }
+    }else{
+        h2.innerHTML = `Game Over! Your score was <b>${level}</b> <br> press any key to start.`;
+        document.querySelector("body").style. backgroundColor = "red";
+        setTimeout(function(){
+         document.querySelector("body").style.backgroundColor = "white";
+        }, 150)
+        reset();
+    }
+   
+}
+
+
+
  
